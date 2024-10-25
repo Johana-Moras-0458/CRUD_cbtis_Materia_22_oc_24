@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block titulo %} gestion de materias {% endblock %}
+
+{% block cuerpo %}
+<h1> gestionar materias Johana Moras</h1>
+{% for  m in lasmaterias %}
+
+<li> {{m.codigo}} ----- {{m.nombre}}-----{{m.creditos}}</li>
+{% endfor %}
+{% endblock %}
